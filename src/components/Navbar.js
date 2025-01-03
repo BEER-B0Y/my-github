@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // นำเข้า Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./NavBar.css";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  // ฟังก์ชันตรวจสอบการ Scroll
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 50) {
@@ -29,7 +30,7 @@ const NavBar = () => {
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          IT @ Lanna
+         LannaPoly
         </a>
         <button
           className="navbar-toggler"
@@ -46,7 +47,7 @@ const NavBar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="#home">
-                หน้าแรก
+                Home
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -58,34 +59,29 @@ const NavBar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                หลักสูตร
+                Course
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="#bachelor">
-                    ปริญญาตรี
+                  <a className="dropdown-item" href="#Courses">
+                    ปวช.
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#master">
-                    ปริญญาโท
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#phd">
-                    ปริญญาเอก
+                  <a className="dropdown-item" href="#Courses">
+                    ปวส.
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#faculty">
-                คณาจารย์
+              <a className="nav-link" href="#about">
+                About Us
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">
-                ติดต่อเรา
+                Contact
               </a>
             </li>
           </ul>

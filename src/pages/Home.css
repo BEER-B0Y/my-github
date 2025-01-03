@@ -1,31 +1,56 @@
 @keyframes fadeInDown {
-    from {
+  from {
       opacity: 0;
       transform: translateY(-20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  @keyframes fadeInUp {
-    from {
+}
+
+@keyframes fadeInUp {
+  from {
       opacity: 0;
       transform: translateY(20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  @keyframes pulse {
-    0%, 100% {
+}
+
+@keyframes pulse {
+  0%, 100% {
       transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
   }
-  
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+#home {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+button.btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background-color: #1a73e8;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+button.btn:hover {
+  background-color: #105aba;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

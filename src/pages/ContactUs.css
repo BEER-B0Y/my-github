@@ -1,0 +1,19 @@
+.contact-us {
+    background-color: #e9ecef;
+    color: #333;
+  }
+  
+  .contact-us h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-us .form-control {
+    font-family: 'Roboto', sans-serif;
+  }
+  

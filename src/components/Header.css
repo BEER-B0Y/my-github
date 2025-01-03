@@ -1,0 +1,21 @@
+.header {
+    background-color: #007bff; /* สีน้ำเงิน */
+    color: white;
+  }
+  
+  .header .display-4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  .header .lead {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  
+  .header .btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
